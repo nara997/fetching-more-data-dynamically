@@ -1,0 +1,63 @@
+.detailedViewCard{
+    border-radius: 15px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    width: 90%;
+    height: 70%;
+}
+
+
+.loadingStyle{
+    color: black;
+    font-family: roboto;
+    width: 100%;
+    font-size: 45px;
+    border: none;
+}
+
+.textAreaStyling{
+   border: 2px solid black;    
+   margin: 5px;
+   font-size: 14px;
+   font-weight: 500;
+   color:black;
+   font-family: roboto;
+}
+
+.card{
+    display: flex;
+    width: 80%;
+    flex-grow: 1;
+    
+}
+
+p{
+    border: 2px solid black;
+    text-align: center;
+padding-top: 10px;    
+border-radius: 10px;
+font-size: 15px;
+padding: auto;
+font-weight: 600;
+    padding: 5px;
+    margin-right: 15px;
+}
+span{
+    color: blue;
+    font-size: 15px;
+    font-family:  serif;
+    
+}
+
+.hide-button{
+    border: 3px solid grey; 
+}
+    
+.url-container{
+    text-align: center;
+    border: none;
+    flex-shrink: 1;
+}
