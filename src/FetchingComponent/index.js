@@ -51,6 +51,8 @@ const FetchingMore = (props)  => {
     }
     
     const onChangehandler = (key,value) => {
+      console.log(key)
+      console.log([key])
       setUpdate({
         ...update ,
         [key] : value
