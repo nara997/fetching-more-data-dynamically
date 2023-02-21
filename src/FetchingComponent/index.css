@@ -1,6 +1,6 @@
 .detailedViewCard{
     border-radius: 15px;
-    background-color: aliceblue;
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,6 +9,12 @@
     height: 70%;
 }
 
+
+.heading{
+    font-size: 25px;
+    font-weight: 600;
+    font-style: oblique;
+}
 
 .loadingStyle{
     color: black;
@@ -33,7 +39,10 @@
     flex-grow: 1;
     
 }
-
+.buttonConatiner{
+    display: flex;
+    
+}
 p{
     border: 2px solid black;
     text-align: center;
@@ -54,6 +63,7 @@ span{
 
 .hide-button{
     border: 3px solid grey; 
+    margin-left: 20px;
 }
     
 .url-container{
@@ -61,3 +71,4 @@ span{
     border: none;
     flex-shrink: 1;
 }
+

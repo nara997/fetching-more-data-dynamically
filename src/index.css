@@ -5,7 +5,8 @@
   width: 100%;
   padding: 0px;
   position: fixed-top;
-  background-image: linear-gradient(to right, green ,yellow);
+  /* background-image: linear-gradient(to bottom , ); */
+  background-color: blanchedalmond;
   border-radius: 10px;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);

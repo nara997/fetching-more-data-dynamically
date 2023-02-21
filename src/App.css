@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 7px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,7 +9,7 @@
 }
 .heading{
   font-family: roboto;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
 }
 .logo {
@@ -70,19 +70,23 @@ align-items: center;
 
 
 .semi-card{
-  background-color: #ffffff;
+  background-color: transparent;
   border-radius: 15px;
+  border: 3px solid burlywood;
   flex-grow: 1;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 10px;
   margin: 10px;
-
+}
   .loadingStyle{
      color: #ffffff;
      font-size: 55px;
      font-weight:bold;
   }
  
-}
 .App-header {
   color: blue;
   text-align: center;
@@ -98,6 +102,17 @@ align-items: center;
 .App-link {
   color: black;
   font-style: roboto;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+h4{
+  color: black;
+  font-style: roboto;
+  font-size: 25px;
+  font-style: italic;
   margin-bottom: 5px;
 }
 .buttonContainer{
@@ -119,7 +134,28 @@ align-items: center;
 
 h1{
   font-family: roboto;
-  font-size: 15px;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.idstyling{
+  font-family: roboto;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  font-style: oblique;
+  align-self: center;
+  margin-top: 10px;
+  border: 3px solid grey;
+}
+
+span{
+  font-family: roboto;
+  font-size: 200px;
+  color: blue;
+  font-weight: 900;
   font-weight: bold;
   font-style: italic;
 }

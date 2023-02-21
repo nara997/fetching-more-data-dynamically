@@ -49,7 +49,7 @@ export default function App() {
   if (error) return <p>Error : {error.message}</p>;
   return (
     <div className='bg-conatiner'>
-      <h1 className="heading">More Data is Fetched and Displayed Dynamically By Clicking More Details</h1>
+      <h1 className="heading">..More Data is Fetched and Displayed Dynamically By Clicking More Details And Also After Editing   Subject or Body(or both)You Can Send mutation by Clicking on Update...</h1>
 
       <div class="card">
         <div className="leftSideCard">
@@ -57,12 +57,12 @@ export default function App() {
         {
         data.messages.items.map(eachMessage =>(
         <div className="semi-card" key ={eachMessage.id}>
-        <p>id:{eachMessage.id}</p>
+        <p className="idstyling">id:{eachMessage.id}</p>
         <h3 className="App-link">subject:{eachMessage.subject}</h3>
         <div className="bodyStyling">
         <h4>body:
-        {eachMessage.body.length >= 150 ? <ReadMore prop={eachMessage.body} /> : eachMessage.body}
-
+        {eachMessage.body.length >= 100 ? <ReadMore prop={eachMessage.body} /> : eachMessage.body}
+        
         </h4>
         </div>
         <div className="buttonContainer">
