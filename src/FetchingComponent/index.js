@@ -41,7 +41,7 @@ const FetchingMore = (props)  => {
 
     const {id,showFunction } = props
 
-    const [update, setUpdate] = useState({id:"", subject:"" , body:""})
+    const [update, setUpdate] = useState({})
 
     const [toggle, setToggle] = useState(false)
   
@@ -49,23 +49,21 @@ const FetchingMore = (props)  => {
 
       setToggle(true)
     }
-
-    const onChangeSubject = (event) => {
     
-      setUpdate({...update,
-        id: id,
-        subject: event.target.value})
+    const onChangehandler = (key,value) => {
+      setUpdate({
+        ...update ,
+        [key] : value
+      })
     }
-
-    const onChangeBody = (event) => {
-      setUpdate({...update,
-        body: event.target.value})
-    }
+  
 
 
     const { loading, error, data } = useQuery(GET_Datailed_view, {
         variables : {
           id: `${id}` 
+      }, onCompleted : (data) => {
+        setUpdate(data.message)
       },})
 
 
@@ -89,12 +87,12 @@ const FetchingMore = (props)  => {
         </div>
         <div className="card">
         <p>Subject=></p>
-          <textarea cols="35" rows="4" className="textAreaStyling" onChange={onChangeSubject}>{data.message.subject}</textarea>
+          <textarea cols="35" rows="4" className="textAreaStyling" onChange={(e) => onChangehandler("subject", e.target.value)}>{data.message.subject}</textarea>
         </div>
         
           <div className="card">
           <p>Body=></p>
-          <textarea cols="35" rows="7" className="textAreaStyling" onChange={onChangeBody} >{data.message.body}</textarea>
+          <textarea cols="35" rows="7" className="textAreaStyling" onChange={(e) => onChangehandler("body", e.target.value)} >{data.message.body}</textarea>
           </div>
           <div className="url-container">
 
